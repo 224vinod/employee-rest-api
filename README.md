@@ -16,7 +16,7 @@ This api gives all employee data in JSON format
 #### Sample
 
 ###### Request URI 
-/employee/
+GET /employee/
 ###### Response 
 `[
     {
@@ -40,7 +40,7 @@ This api gives paticular employee data with id as {id} in JSON format
 #### Sample
 
 ###### Request URI 
-/employee/2
+GET /employee/2
 ###### Response 
 `{
         "id": 2,
@@ -57,7 +57,7 @@ This api adds an employee data to the system
 #### Sample
 
 ###### Request URI 
-/employee
+POST /employee
 ###### Request Body
 `{
     "firstName": "Suman",
@@ -81,7 +81,7 @@ This api updates an employee data in the system if employee with {id} available.
 #### Sample
 
 ###### Request URI 
-/employee/5
+PUT /employee/5
 ###### Request Body
 `{
     "firstName": "Teja",
@@ -105,8 +105,7 @@ This api deletes an employee data in the system if employee with {id} available.
 
 ###### Request URI 
 DELETE /employee/3
-###### Request Body
-` `
+
 ###### Response 
 `{
     "id": 3,
